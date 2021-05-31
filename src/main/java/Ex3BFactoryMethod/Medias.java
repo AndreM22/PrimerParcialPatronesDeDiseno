@@ -4,13 +4,6 @@ public class Medias implements IElementosDeportivos{
     private String tamano;
     private String deporte;
 
-    @Override
-    public void crear() {
-        System.out.println("Medias:");
-        System.out.println("Tamaño: "+tamano);
-        System.out.println("Deporte: "+deporte);
-        System.out.println();
-    }
 
     public String getTamano() {
         return tamano;
@@ -26,5 +19,13 @@ public class Medias implements IElementosDeportivos{
 
     public void setDeporte(String deporte) {
         this.deporte = deporte;
+    }
+    
+    @Override
+    public void crear() {
+    	System.out.println("Medias:");
+    	System.out.println("Tamaño: "+tamano);
+    	System.out.println("Deporte: "+deporte);
+    	System.out.println();
     }
 }

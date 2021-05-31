@@ -3,7 +3,7 @@ package Ex1BSingleton;
 public class Cliente {
 	public static void main(String[] args) {
 
-		Thread thread1 = new Thread(new Runnable() {
+		Thread estudiante1 = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				PagoMatricula singleton = PagoMatricula.getInstance();
@@ -16,7 +16,7 @@ public class Cliente {
 			}
 		});
 
-		Thread thread2 = new Thread(new Runnable() {
+		Thread estudiante2 = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				PagoMatricula singleton = PagoMatricula.getInstance();
@@ -29,7 +29,7 @@ public class Cliente {
 
 			}
 		});
-		Thread thread3 = new Thread(new Runnable() {
+		Thread estudiante3 = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				PagoMatricula singleton = PagoMatricula.getInstance();
@@ -42,7 +42,7 @@ public class Cliente {
 
 			}
 		});
-		Thread thread4 = new Thread(new Runnable() {
+		Thread estudiante4 = new Thread(new Runnable() {
 			@Override
 			public void run() {
 				PagoMatricula singleton = PagoMatricula.getInstance();
@@ -57,10 +57,10 @@ public class Cliente {
 		});
 		// La información se muestra en cada hilo para ver como se va actuailzando la
 		// información de los estudiantes
-		thread1.start();
-		thread2.start();
-		thread3.start();
-		thread4.start();
+		estudiante1.start();
+		estudiante2.start();
+		estudiante3.start();
+		estudiante4.start();
 
 	}
 

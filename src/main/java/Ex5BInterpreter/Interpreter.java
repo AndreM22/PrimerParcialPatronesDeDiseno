@@ -8,8 +8,8 @@ public class Interpreter extends AbstractExpression {
 	private List<AbstractExpression> parseTree = new ArrayList<>();
 	private Context context;
 
-	public Interpreter(String word) {
-		this.interpretecion(word);
+	public Interpreter(String numerosRomanos) {
+		this.interpretecion(numerosRomanos);
 	}
 
 	public void interpretecion(String words) {

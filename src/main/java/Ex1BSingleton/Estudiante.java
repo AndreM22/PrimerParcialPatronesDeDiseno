@@ -16,5 +16,8 @@ public class Estudiante {
 		this.ci = ci;
 	}
 	
-	
+	public void mostrarInfo() {
+		System.out.println("Nombre: "+ nombre);
+		System.out.println("CI: "+ci);
+	}
 }

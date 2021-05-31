@@ -31,20 +31,19 @@ public class PagoMatricula {
 			this.monto.put(e.nombre, monto);
 			estudiantes.add(e);
 		} else {
-			this.monto.put(e.nombre, monto+this.monto.get(e.nombre));
+			this.monto.put(e.nombre, monto + this.monto.get(e.nombre));
 		}
 		matriculacion.put(e.nombre, "Hora: " + hora);
 
 	}
 
 	public synchronized void mostrarInfo() {
-		int numero=1;
+		int numero = 1;
 		for (Estudiante e : estudiantes) {
-			System.out.println("Estudiante #"+numero);
-			System.out.println("Nombre " + e.nombre);
-			System.out.println("Ci: " + e.ci);
+			System.out.println("Estudiante #" + numero);
+			e.mostrarInfo();
 			System.out.println(matriculacion.get(e.nombre));
-			System.out.println("Monto: "+monto.get(e.nombre));
+			System.out.println("Monto: " + monto.get(e.nombre));
 			System.out.println();
 			numero++;
 		}

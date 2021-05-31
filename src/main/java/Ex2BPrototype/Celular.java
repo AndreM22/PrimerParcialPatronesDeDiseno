@@ -62,7 +62,7 @@ public class Celular implements ICelular {
 		c.modelo = this.modelo;
 		c.setPeso(this.peso);
 		c.setTamano(this.tamano);
-		c.setCamara(this.camara);
+		c.setCamara((Camara) this.camara.clone());
 		c.setOrigen(this.origen);
 		c.setImei(this.imei);
 		return c;
